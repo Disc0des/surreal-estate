@@ -1,4 +1,4 @@
-# Surreal Estate React App
+# :house_with_garden: Surreal Estate React App
 
 Backend module project with Manchester Codes. We were given a brief to design a React app which would store property details and allow the user to search properties from a given endpoint.
 

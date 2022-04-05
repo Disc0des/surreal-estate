@@ -1,0 +1,31 @@
+.navbar {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  border-bottom: lightslategrey;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 200px;
+  height: 65px;
+  border-bottom: lightslategrey;
+}
+
+.navbar-links {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  font-weight: 800;
+}
+
+.navbar-links-item {
+  padding-right: 30px;
+  text-decoration: none;
+}
+
+.navbar-links-item:link {
+  color: #8c2c72; 
+}
