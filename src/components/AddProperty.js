@@ -4,7 +4,12 @@ import "../styles/AddProperty.css";
 const initialState = {
   fields: {
     title: "",
+    type: "Flat",
+    bedrooms: "",
+    bathrooms: "",
+    price: "",
     city: "Manchester",
+    email: "",
   },
 };
 
@@ -20,8 +25,9 @@ function AddProperty() {
   };
   return (
     <div className="AddProperty">
-      <form onSubmit={handleAddProperty}>
+      <form className="add-form" onSubmit={handleAddProperty}>
         <label htmlFor="title">
+          Title
           <input
             id="title"
             name="title"
@@ -29,7 +35,51 @@ function AddProperty() {
             onChange={handleFieldChange}
           />
         </label>
+        <label htmlFor="type">
+          Type
+          <select
+            id="type"
+            name="type"
+            value={fields.type}
+            onChange={handleFieldChange}
+          >
+            <option value="Flat">Flat</option>
+            <option value="Detached">Detached</option>
+            <option value="Semi-Detached">Semi-Detached</option>
+            <option value="Terraced">Terraced</option>
+            <option value="Cottage">Cottage</option>
+            <option value="Bungalow">Bungalow</option>
+          </select>
+        </label>
+        <label htmlFor="bedrooms">
+          No. of Bedrooms
+          <input
+            id="bedrooms"
+            name="bedrooms"
+            value={fields.bedrooms}
+            onChange={handleFieldChange}
+          />
+        </label>
+        <label htmlFor="bathrooms">
+          No. of Bathrooms
+          <input
+            id="bathrooms"
+            name="bathrooms"
+            value={fields.bathrooms}
+            onChange={handleFieldChange}
+          />
+        </label>
+        <label htmlFor="price">
+          Price
+          <input
+            id="price"
+            name="price"
+            value={fields.price}
+            onChange={handleFieldChange}
+          />
+        </label>
         <label htmlFor="city">
+          City
           <select
             id="city"
             name="city"
@@ -42,9 +92,20 @@ function AddProperty() {
             <option value="Liverpool">Liverpool</option>
           </select>
         </label>
-        <button className="add-button" type="submit">
-          Add
-        </button>
+        <label htmlFor="agent-email">
+          Agent Email
+          <input
+            id="agent-email"
+            name="agent-email"
+            value={fields.email}
+            onChange={handleFieldChange}
+          />
+        </label>
+        <div className="add-button-container">
+          <button className="add-button" type="submit">
+            Add Property
+          </button>
+        </div>
       </form>
     </div>
   );
