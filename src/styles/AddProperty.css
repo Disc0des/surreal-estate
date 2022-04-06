@@ -1,5 +1,10 @@
 .AddProperty {
   padding-top: 20px;
+  background: url("../page-background.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  height: 100vh;
 }
 
 .add-form {
@@ -13,24 +18,32 @@
 }
 
 label {
-  margin-bottom: 10px;
-  font-weight: 300;
-  font-weight: 600;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  font-weight: 800;
   color: #5a2c8c;
   font-family: 'Poppins', sans-serif;
 }
 
 input {
-  width: 130px;
+  width: 155px;
   height: 20px;
+  border-radius: 5px;
+  border-width: 1px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  color: #5a2c8c;
 }
 
 select {
-  width: 138px;
+  width: 163px;
   height: 25px;
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
   color: #5a2c8c;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
 }
 
 .add-button-container {
@@ -38,12 +51,13 @@ select {
 }
 
 button {
-  width: 138px;
+  width: 163px;
   height: 28px;
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
   color: #5a2c8c;
   background-color: white;
+  border-radius: 5px;
 }
 
 button:hover {
@@ -54,4 +68,13 @@ button:hover {
 button:active {
   background-color: #1e7929;
   transform: scale(1.2);
+}
+
+input:hover, select:hover {
+  border-color: #5a2c8c;
+  border-width: 2px;
+}
+
+input:active, select:active {
+  border-color: #5a2c8c;
 }

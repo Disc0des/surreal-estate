@@ -1,4 +1,6 @@
+/* eslint-disable no-console */
 import React, { useState } from "react";
+import axios from "axios";
 import "../styles/AddProperty.css";
 
 const initialState = {
@@ -17,8 +19,14 @@ function AddProperty() {
   const [fields, setFields] = useState(initialState.fields);
   const handleAddProperty = (event) => {
     event.preventDefault();
-    // eslint-disable-next-line no-console
-    console.log(fields);
+    axios
+      .post("http://localhost:3000/api/v1/PropertyListing", { ...fields })
+      .then((response) => {
+        console.log(response);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   };
   const handleFieldChange = (event) => {
     setFields({ ...fields, [event.target.name]: event.target.value });
@@ -33,6 +41,7 @@ function AddProperty() {
             name="title"
             value={fields.title}
             onChange={handleFieldChange}
+            placeholder="1st line of address"
           />
         </label>
         <label htmlFor="type">
@@ -58,6 +67,7 @@ function AddProperty() {
             name="bedrooms"
             value={fields.bedrooms}
             onChange={handleFieldChange}
+            placeholder="0"
           />
         </label>
         <label htmlFor="bathrooms">
@@ -67,6 +77,7 @@ function AddProperty() {
             name="bathrooms"
             value={fields.bathrooms}
             onChange={handleFieldChange}
+            placeholder="0"
           />
         </label>
         <label htmlFor="price">
@@ -76,6 +87,7 @@ function AddProperty() {
             name="price"
             value={fields.price}
             onChange={handleFieldChange}
+            placeholder="£0"
           />
         </label>
         <label htmlFor="city">
@@ -95,10 +107,11 @@ function AddProperty() {
         <label htmlFor="agent-email">
           Agent Email
           <input
-            id="agent-email"
-            name="agent-email"
+            id="email"
+            name="email"
             value={fields.email}
             onChange={handleFieldChange}
+            placeholder="agent@surreal.com"
           />
         </label>
         <div className="add-button-container">

@@ -7,6 +7,7 @@ body {
 .App {
   font-family: 'Poppins', sans-serif; 
   align-items: center;
+  border-bottom: #5a2c8c;
 }
 
 
