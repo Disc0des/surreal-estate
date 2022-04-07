@@ -14,13 +14,13 @@ function PropertyCard({
 }) {
   return (
     <div className="property-card">
-      <img src={house} alt="house" className="2-kings" />
+      <img src={house} alt="house" className="two-kings" />
       <ul className="property-details">
         <li className="card-title">{title}</li>
+        <li className="card-city">{city}</li>
         <li className="card-type">{type}</li>
         <li className="card-beds">{bedrooms}</li>
         <li className="card-baths">{bathrooms}</li>
-        <li className="card-city">{city}</li>
         <li className="card-price">{price}</li>
         <li className="card-email">{email}</li>
       </ul>

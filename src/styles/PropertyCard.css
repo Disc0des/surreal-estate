@@ -1,4 +1,29 @@
 .property-card {
-  background-color: #d2adee;
+  background: rgba(188, 142, 255, 0.3);
   width: 200px;
+  height: 330px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: #5a2c8c;
+}
+
+.two-kings {
+  width: 190px;
+  margin: auto;
+  display: block;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #5a2c8c;
+  border-radius: 5px;
+}
+
+.property-details {
+  padding: 0px;
+  margin-top: 10px;
+  margin-left: 2px;;
+  list-style: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
 }

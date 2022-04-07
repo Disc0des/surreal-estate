@@ -1,0 +1,9 @@
+.property-card-cont {
+  background: url("../page-background.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  height: 100vh;
+  display: flex;
+  
+}

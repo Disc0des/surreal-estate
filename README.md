@@ -2,6 +2,10 @@
 
 Backend module project with Manchester Codes. We were given a brief to design a React app which would store property details and allow the user to search properties from a given endpoint.
 
+## TODO's
+
+- mailto button on property card
+
 ## Languages and Frameworks
 
 HTML, CSS, JavaScript, React
