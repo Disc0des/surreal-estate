@@ -13,31 +13,11 @@ describe("property card render", () => {
     email: "dummy@dummy.com",
   };
   it("renders property card correctly", () => {
-    const { asFragment } = render(
-      <PropertyCard
-        title={validProps.title}
-        type={validProps.type}
-        bedrooms={validProps.bedrooms}
-        bathrooms={validProps.bathrooms}
-        price={validProps.price}
-        city={validProps.city}
-        email={validProps.email}
-      />
-    );
+    const { asFragment } = render(<PropertyCard {...validProps} />);
     expect(asFragment()).toMatchSnapshot();
   });
   it("renders the correct information for each prop", () => {
-    const { getByText } = render(
-      <PropertyCard
-        title={validProps.title}
-        type={validProps.type}
-        bedrooms={validProps.bedrooms}
-        bathrooms={validProps.bathrooms}
-        price={validProps.price}
-        city={validProps.city}
-        email={validProps.email}
-      />
-    );
+    const { getByText } = render(<PropertyCard {...validProps} />);
     expect(getByText("dummy-title")).toHaveClass("card-title");
     expect(getByText("dummy-city")).toHaveClass("card-city");
     expect(getByText("dummy-type")).toHaveClass("card-type");

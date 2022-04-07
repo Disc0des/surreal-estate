@@ -7,7 +7,7 @@ exports[`property card render renders property card correctly 1`] = `
   >
     <img
       alt="house"
-      class="2-kings"
+      class="two-kings"
       src="2-kings.png"
     />
     <ul
@@ -17,6 +17,11 @@ exports[`property card render renders property card correctly 1`] = `
         class="card-title"
       >
         dummy-title
+      </li>
+      <li
+        class="card-city"
+      >
+        dummy-city
       </li>
       <li
         class="card-type"
@@ -32,11 +37,6 @@ exports[`property card render renders property card correctly 1`] = `
         class="card-baths"
       >
         2
-      </li>
-      <li
-        class="card-city"
-      >
-        dummy-city
       </li>
       <li
         class="card-price"

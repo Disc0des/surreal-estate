@@ -5,6 +5,8 @@ Backend module project with Manchester Codes. We were given a brief to design a 
 ## TODO's
 
 - mailto button on property card
+- scroll behavior on properties screen
+
 
 ## Languages and Frameworks
 

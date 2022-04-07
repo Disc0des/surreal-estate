@@ -9,6 +9,8 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
 .property-card-cont .alert-error {
