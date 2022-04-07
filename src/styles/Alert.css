@@ -1,5 +1,18 @@
+.Alert {
+  width: 400px;
+  height: 25px;
+  align-self: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+
+}
+
 .Alert, .alert-success {
   background-color: #3fd351;
+  text-align: center;
+  border-color: #217a37;
+  border-style: solid;
+  border-width: 2px;
 }
 
 .Alert .alert-error {

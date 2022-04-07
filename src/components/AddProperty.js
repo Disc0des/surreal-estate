@@ -52,6 +52,7 @@ function AddProperty() {
           Title
           <input
             id="title"
+            type="text"
             name="title"
             value={fields.title}
             onChange={handleFieldChange}
@@ -78,6 +79,7 @@ function AddProperty() {
           No. of Bedrooms
           <input
             id="bedrooms"
+            type="number"
             name="bedrooms"
             value={fields.bedrooms}
             onChange={handleFieldChange}
@@ -88,6 +90,7 @@ function AddProperty() {
           No. of Bathrooms
           <input
             id="bathrooms"
+            type="number"
             name="bathrooms"
             value={fields.bathrooms}
             onChange={handleFieldChange}
@@ -98,6 +101,8 @@ function AddProperty() {
           Price
           <input
             id="price"
+            type="number"
+            step="1000"
             name="price"
             value={fields.price}
             onChange={handleFieldChange}
@@ -122,6 +127,7 @@ function AddProperty() {
           Agent Email
           <input
             id="email"
+            type="email"
             name="email"
             value={fields.email}
             onChange={handleFieldChange}
