@@ -8,10 +8,19 @@ function NavBar() {
     <div className="navbar">
       <img src={logo} alt="logo" className="logo" />
       <ul className="navbar-links">
-        <NavLink to="/" className="navbar-links-item">
+        <NavLink
+          exact
+          to="/"
+          activeClassName="selected-link"
+          className="navbar-links-item"
+        >
           <li>View Properties</li>
         </NavLink>
-        <NavLink to="/add-property" className="navbar-links-item">
+        <NavLink
+          to="/add-property"
+          activeClassName="selected-link"
+          className="navbar-links-item"
+        >
           <li>Add Property</li>
         </NavLink>
       </ul>

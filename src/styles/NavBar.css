@@ -18,13 +18,17 @@
   justify-content: space-between;
   list-style-type: none;
   font-weight: 800;
+  padding-right: 10px;
 }
 
 .navbar-links-item {
-  padding-right: 30px;
+  padding: 5px 20px 5px 20px;
   text-decoration: none;
+  text-align: center;
 }
 
-.navbar-links-item:link {
-  color: #5a2c8c; 
+.selected-link {
+  background-color: #5a2c8c;
+  border-radius: 5px;
+  color: white;
 }
