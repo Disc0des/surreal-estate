@@ -66,8 +66,8 @@ button:hover {
 }
 
 button:active {
-  background-color: #1e7929;
-  transform: scale(1.2);
+  background-color: #5a2c8c;
+  transform: scale(0.9);
 }
 
 input:hover, select:hover {

@@ -1,0 +1,7 @@
+.Alert, .alert-success {
+  background-color: #3fd351;
+}
+
+.Alert .alert-error {
+  background-color: #c73939;
+}
