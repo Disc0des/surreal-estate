@@ -6,6 +6,7 @@ Backend module project with Manchester Codes. We were given a brief to design a 
 
 - mailto button on property card
 - scroll behavior on properties screen
+- tabs for city query change colour when selected
 
 
 ## Languages and Frameworks

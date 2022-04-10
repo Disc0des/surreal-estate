@@ -2,12 +2,15 @@
 
 body {
   background-color: #e6e8fb;
+  font-family: 'Poppins', sans-serif; 
 }
 
 .App {
-  font-family: 'Poppins', sans-serif; 
   align-items: center;
   border-bottom: #5a2c8c;
+  border-top: none;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
 }
 
 

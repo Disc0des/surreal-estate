@@ -1,0 +1,24 @@
+.sidebar-links {
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+  padding: 0px;
+  list-style-type: none;
+  margin: 0px;
+  padding: 10px;
+  background-color: white;
+}
+
+.sidebar-link-item {
+  text-decoration: none;
+  background-color: white;
+  padding: 0px 10px 0px 10px;
+  border-radius: 5px;
+  font-weight: 600;
+  color: #5a2c8c;
+}
+
+.selected-city {
+  background-color: #5a2c8c;
+  color: white;
+}
