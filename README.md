@@ -7,7 +7,8 @@ Backend module project with Manchester Codes. We were given a brief to design a 
 - mailto button on property card
 - scroll behavior on properties screen
 - tabs for city query change colour when selected
-
+- change property search button to icon
+- icons for beds and bathrooms on property card
 
 ## Languages and Frameworks
 
@@ -19,7 +20,7 @@ Jest, React testing library
 
 ## Packages Used
 
-Axios, PropTypes
+Axios, PropTypes, qs, 
 
 ## Available Scripts
 
