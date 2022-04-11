@@ -9,6 +9,8 @@ Backend module project with Manchester Codes. We were given a brief to design a 
 - tabs for city query change colour when selected
 - change property search button to icon
 - icons for beds and bathrooms on property card
+- ammend font sizes in project
+- condense CSS
 
 ## Languages and Frameworks
 

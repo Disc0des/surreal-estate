@@ -5,16 +5,18 @@ import qs from "qs";
 
 function SideBar() {
   const [query, setQuery] = useState("");
-
+  const { search } = useLocation();
   const history = useHistory();
 
   const buildQueryString = (operation, valueObj) => {
-    const { search } = useLocation();
     const currentQueryParams = qs.parse(search, { ignoreQueryPrefix: true });
 
     const newQueryParams = {
       ...currentQueryParams,
-      [operation]: JSON.stringify(valueObj),
+      [operation]: JSON.stringify(
+        ...JSON.parse(currentQueryParams[operation] || "{}"),
+        ...valueObj
+      ),
     };
 
     return qs.stringify(newQueryParams, {
