@@ -14,3 +14,10 @@
   align-self: baseline;
 }
 
+.alert-cont {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: white;
+}

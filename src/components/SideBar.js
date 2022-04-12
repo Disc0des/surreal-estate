@@ -13,10 +13,10 @@ function SideBar() {
 
     const newQueryParams = {
       ...currentQueryParams,
-      [operation]: JSON.stringify(
+      [operation]: JSON.stringify({
         ...JSON.parse(currentQueryParams[operation] || "{}"),
-        ...valueObj
-      ),
+        ...valueObj,
+      }),
     };
 
     return qs.stringify(newQueryParams, {

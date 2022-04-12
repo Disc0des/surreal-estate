@@ -35,8 +35,17 @@ function Properties() {
   return (
     <div className="properties-page">
       <Sidebar />
-      <div className="property-card-cont">
+      <div className="alert-cont">
         <Alert message={alert.message} success={false} />
+        {properties.length === 0 && (
+          <Alert
+            id="property-error"
+            message="Error! no properties match your search"
+            success={false}
+          />
+        )}
+      </div>
+      <div className="property-card-cont">
         {properties.map((property) => (
           <PropertyCard key={property._id} {...property} />
         ))}
