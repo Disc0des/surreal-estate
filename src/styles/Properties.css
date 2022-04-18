@@ -1,3 +1,8 @@
+.properties-page {
+  display: flex;
+  scroll-behavior: smooth;
+}
+
 .property-card-cont {
   background: url("../page-background.jpeg");
   background-size: cover;

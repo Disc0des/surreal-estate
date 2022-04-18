@@ -11,6 +11,7 @@ body {
   border-top: none;
   border-bottom-width: 1px;
   border-bottom-style: solid;
+  scroll-snap-type: none;
 }
 
 

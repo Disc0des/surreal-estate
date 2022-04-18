@@ -1,7 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
-import house from "../2-kings.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "../styles/PropertyCard.css";
+import house from "../2-kings.png";
 
 function PropertyCard({
   title,
@@ -12,18 +13,46 @@ function PropertyCard({
   price,
   email,
 }) {
+  const sendEmail = () => {
+    window.open(`mailto:${email}`);
+  };
+
   return (
     <div className="property-card">
       <img src={house} alt="house" className="two-kings" />
-      <ul className="property-details">
-        <li className="card-title">{title}</li>
-        <li className="card-city">{city}</li>
-        <li className="card-type">{type}</li>
-        <li className="card-beds">{bedrooms}</li>
-        <li className="card-baths">{bathrooms}</li>
-        <li className="card-price">{price}</li>
-        <li className="card-email">{email}</li>
-      </ul>
+      <div className="details-cont">
+        <ul className="icon-cont">
+          <li>
+            <FontAwesomeIcon icon="fa-solid fa-tag" />
+          </li>
+          <li>
+            <FontAwesomeIcon icon="fa-solid fa-map-pin" />
+          </li>
+          <li>
+            <FontAwesomeIcon icon="fa-solid fa-house" />
+          </li>
+          <li>
+            <FontAwesomeIcon icon="fa-solid fa-bed" />
+          </li>
+          <li>
+            <FontAwesomeIcon icon="fa-solid fa-bath" />
+          </li>
+          <li>
+            <FontAwesomeIcon icon="fa-solid fa-sterling-sign" />
+          </li>
+        </ul>
+        <ul className="property-details">
+          <li className="title-details">{title}</li>
+          <li className="city-details">{city}</li>
+          <li className="type-details">{type}</li>
+          <li className="beds-details">{bedrooms}</li>
+          <li className="bath-details">{bathrooms}</li>
+          <li className="price-details">{price}</li>
+        </ul>
+      </div>
+      <button className="email-button" type="button" onClick={sendEmail}>
+        <FontAwesomeIcon icon="fa-solid fa-envelope" />
+      </button>
     </div>
   );
 }

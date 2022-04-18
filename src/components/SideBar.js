@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { NavLink, useLocation, useHistory } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "../styles/SideBar.css";
 import qs from "qs";
 
@@ -44,15 +45,16 @@ function SideBar() {
           placeholder="Search Listings"
         />
         <button className="property-search-button" type="submit">
-          search
+          <FontAwesomeIcon icon="magnifying-glass" />
         </button>
       </form>
-      <ul className="sidebar-links">
+      <ul className="city-filter-list">
+        <h1>Filter by city</h1>
         <NavLink
           exact
           to={buildQueryString("query", { city: "Manchester" })}
           activeClassName="selected-city"
-          className="sidebar-link-item"
+          className="city-filter"
         >
           <li>Manchester</li>
         </NavLink>
@@ -60,7 +62,7 @@ function SideBar() {
           exact
           to={buildQueryString("query", { city: "Liverpool" })}
           activeClassName="selected-city"
-          className="sidebar-link-item"
+          className="city-filter"
         >
           <li>Liverpool</li>
         </NavLink>
@@ -68,7 +70,7 @@ function SideBar() {
           exact
           to={buildQueryString("query", { city: "Sheffield" })}
           activeClassName="selected-city"
-          className="sidebar-link-item"
+          className="city-filter"
         >
           <li>Sheffield</li>
         </NavLink>
@@ -76,23 +78,24 @@ function SideBar() {
           exact
           to={buildQueryString("query", { city: "Leeds" })}
           activeClassName="selected-city"
-          className="sidebar-link-item"
+          className="city-filter"
         >
           <li>Leeds</li>
         </NavLink>
       </ul>
       <ul className="price-filter-list">
+        <h1>Sort by price</h1>
         <NavLink
           to={buildQueryString("sort", { price: 1 })}
-          className="price-query"
+          className="price-filter"
         >
-          <li>Price Ascending</li>
+          <li>Lowest First</li>
         </NavLink>
         <NavLink
           to={buildQueryString("sort", { price: -1 })}
-          className="price-query"
+          className="price-filter"
         >
-          <li>Price Descending</li>
+          <li>Highest First</li>
         </NavLink>
       </ul>
     </div>
