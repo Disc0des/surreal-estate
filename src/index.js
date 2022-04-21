@@ -14,6 +14,7 @@ import {
   faMagnifyingGlass,
   faHouse,
 } from "@fortawesome/free-solid-svg-icons";
+
 import App from "./components/App";
 
 library.add(

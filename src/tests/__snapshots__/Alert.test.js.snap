@@ -5,7 +5,7 @@ exports[`alert bar does not render if message prop is empty 1`] = `<DocumentFrag
 exports[`alert bar renders an error when value of message is error 1`] = `
 <DocumentFragment>
   <div
-    class="Alert alert-error"
+    class="alert-error"
   >
     Error!
   </div>
@@ -15,7 +15,7 @@ exports[`alert bar renders an error when value of message is error 1`] = `
 exports[`alert bar renders success when value of message is success 1`] = `
 <DocumentFragment>
   <div
-    class="Alert alert-error"
+    class="alert-error"
   >
     Success!
   </div>

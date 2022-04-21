@@ -3,90 +3,144 @@
 exports[`App createRoots App component correctly 1`] = `
 <DocumentFragment>
   <div
-    class="App"
+    class="navbar"
   >
-    <div
-      class="navbar"
+    <img
+      alt="logo"
+      class="logo"
+      src="estate-logo.png"
+    />
+    <ul
+      class="navbar-links"
     >
-      <img
-        alt="logo"
-        class="logo"
-        src="estate-logo.png"
-      />
-      <ul
-        class="navbar-links"
+      <a
+        activeclassname="selected-link"
+        class="navbar-links-item"
+        href="/"
       >
-        <a
-          aria-current="page"
-          class="navbar-links-item active"
-          href="/"
+        <li
+          class="navbar-label"
         >
-          <li>
-            View Properties
-          </li>
-        </a>
-        <a
-          class="navbar-links-item"
-          href="/add-property"
+          View Properties
+        </li>
+      </a>
+      <a
+        activeclassname="selected-link"
+        class="navbar-links-item"
+        href="/add-property"
+      >
+        <li
+          class="navbar-label"
         >
-          <li>
-            Add Property
-          </li>
-        </a>
-      </ul>
+          Add Property
+        </li>
+      </a>
+    </ul>
+    <div>
+      FacebookLogin
     </div>
   </div>
   <div
-    class="property-card-cont"
+    class="properties-page"
   >
     <div
-      class="property-card"
+      class="sidebar-cont"
     >
-      <img
-        alt="house"
-        class="2-kings"
-        src="2-kings.png"
-      />
-      <ul
-        class="property-details"
+      <form
+        class="property-search"
       >
-        <li
-          class="card-title"
+        <input
+          class="property-search-input"
+          placeholder="Search Listings"
+          type="text"
+          value=""
+        />
+        <button
+          class="property-search-button"
+          type="submit"
+        />
+      </form>
+      <ul
+        class="city-filter-list"
+      >
+        <h1>
+          Filter by city
+        </h1>
+        <a
+          aria-current="page"
+          class="city-filter selected-city"
+          href="/?query={\\"city\\":\\"Manchester\\"}"
         >
-          nice house
-        </li>
-        <li
-          class="card-type"
+          <li>
+            Manchester
+          </li>
+        </a>
+        <a
+          aria-current="page"
+          class="city-filter selected-city"
+          href="/?query={\\"city\\":\\"Liverpool\\"}"
         >
-          flat
-        </li>
-        <li
-          class="card-beds"
+          <li>
+            Liverpool
+          </li>
+        </a>
+        <a
+          aria-current="page"
+          class="city-filter selected-city"
+          href="/?query={\\"city\\":\\"Sheffield\\"}"
         >
-          2
-        </li>
-        <li
-          class="card-baths"
+          <li>
+            Sheffield
+          </li>
+        </a>
+        <a
+          aria-current="page"
+          class="city-filter selected-city"
+          href="/?query={\\"city\\":\\"Leeds\\"}"
         >
-          2
-        </li>
-        <li
-          class="card-city"
+          <li>
+            Leeds
+          </li>
+        </a>
+      </ul>
+      <ul
+        class="price-filter-list"
+      >
+        <h1>
+          Sort by price
+        </h1>
+        <a
+          aria-current="page"
+          class="price-filter active"
+          href="/?sort={\\"price\\":1}"
         >
-          Manchester
-        </li>
-        <li
-          class="card-price"
+          <li>
+            Lowest First
+          </li>
+        </a>
+        <a
+          aria-current="page"
+          class="price-filter active"
+          href="/?sort={\\"price\\":-1}"
         >
-          £100000
-        </li>
-        <li
-          class="card-email"
-        >
-          joe@surreal
-        </li>
+          <li>
+            Highest First
+          </li>
+        </a>
       </ul>
     </div>
+    <div
+      class="alert-cont"
+    >
+      <div
+        class="alert-error"
+      >
+        Error! no properties match your search
+      </div>
+    </div>
+    <div
+      class="property-card-cont"
+    />
   </div>
 </DocumentFragment>
 `;

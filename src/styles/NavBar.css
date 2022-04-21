@@ -14,20 +14,36 @@
 
 .navbar-links {
   display: flex;
-  justify-content: space-between;
+  text-align: center;
   list-style-type: none;
-  font-weight: 800;
-  padding-right: 10px;
+  font-weight: 600;
+  padding: 0px;
+  margin: 0px;
 }
 
-.navbar-links-item {
-  padding: 5px 20px 5px 20px;
+.navbar-links-item, .sign-out {
   text-decoration: none;
   text-align: center;
+  margin: 15px;
+  justify-content: center;
+  padding: 5px 10px 5px 10px
 }
 
 .selected-link {
   background-color: #5a2c8c;
   border-radius: 5px;
   color: white;
+  margin: 15px;
+  padding: 5px 10px 5px 10px
+
+}
+
+.sign-out {
+  border-radius: 5px;
+  background-color: #5a2c8c;
+  border: #5a2c8c 1px solid;
+  font-family: 'Poppins', sans-serif; 
+  font-weight: 600;
+  color: white;
+  padding: 5px 10px 5px 10px
 }

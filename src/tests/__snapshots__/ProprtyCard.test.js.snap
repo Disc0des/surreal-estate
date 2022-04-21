@@ -10,45 +10,58 @@ exports[`property card render renders property card correctly 1`] = `
       class="two-kings"
       src="2-kings.png"
     />
-    <ul
-      class="property-details"
+    <div
+      class="details-cont"
     >
-      <li
-        class="card-title"
+      <ul
+        class="icon-cont"
       >
-        dummy-title
-      </li>
-      <li
-        class="card-city"
+        <li />
+        <li />
+        <li />
+        <li />
+        <li />
+        <li />
+      </ul>
+      <ul
+        class="property-details"
       >
-        dummy-city
-      </li>
-      <li
-        class="card-type"
-      >
-        dummy-type
-      </li>
-      <li
-        class="card-beds"
-      >
-        3
-      </li>
-      <li
-        class="card-baths"
-      >
-        2
-      </li>
-      <li
-        class="card-price"
-      >
-        100000
-      </li>
-      <li
-        class="card-email"
-      >
-        dummy@dummy.com
-      </li>
-    </ul>
+        <li
+          class="title-details"
+        >
+          dummy-title
+        </li>
+        <li
+          class="city-details"
+        >
+          dummy-city
+        </li>
+        <li
+          class="type-details"
+        >
+          dummy-type
+        </li>
+        <li
+          class="beds-details"
+        >
+          3
+        </li>
+        <li
+          class="bath-details"
+        >
+          2
+        </li>
+        <li
+          class="price-details"
+        >
+          100000
+        </li>
+      </ul>
+    </div>
+    <button
+      class="email-button"
+      type="button"
+    />
   </div>
 </DocumentFragment>
 `;

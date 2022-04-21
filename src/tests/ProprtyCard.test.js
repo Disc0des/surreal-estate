@@ -18,13 +18,11 @@ describe("property card render", () => {
   });
   it("renders the correct information for each prop", () => {
     const { getByText } = render(<PropertyCard {...validProps} />);
-    expect(getByText("dummy-title")).toHaveClass("card-title");
-    expect(getByText("dummy-city")).toHaveClass("card-city");
-    expect(getByText("dummy-type")).toHaveClass("card-type");
-    expect(getByText(3)).toHaveClass("card-beds");
-    expect(getByText(2)).toHaveClass("card-baths");
-    expect(getByText(100000)).toHaveClass("card-price");
-    expect(getByText("dummy-city")).toHaveClass("card-city");
-    expect(getByText("dummy@dummy.com")).toHaveClass("card-email");
+    expect(getByText("dummy-title")).toHaveClass("title-details");
+    expect(getByText("dummy-city")).toHaveClass("city-details");
+    expect(getByText("dummy-type")).toHaveClass("type-details");
+    expect(getByText(3)).toHaveClass("beds-details");
+    expect(getByText(2)).toHaveClass("bath-details");
+    expect(getByText(100000)).toHaveClass("price-details");
   });
 });

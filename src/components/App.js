@@ -8,9 +8,7 @@ import "../styles/App.css";
 function App() {
   return (
     <Router>
-      <div className="App">
-        <NavBar />
-      </div>
+      <NavBar />
       <Switch>
         <Route exact path="/" component={Properties} />
         <Route exact path="/add-property" component={AddProperty} />

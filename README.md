@@ -4,9 +4,7 @@ Backend module project with Manchester Codes. We were given a brief to design a 
 
 ## TODO's
 
-- scroll behavior on properties screen
-- icons for beds and bathrooms on property card
-- ammend font sizes in project
+- media queries
 - condense CSS
 
 ## Languages and Frameworks
