@@ -2,10 +2,20 @@
 
 Backend module project with Manchester Codes. We were given a brief to design a React app which would store property details and allow the user to search properties from a given endpoint.
 
-## TODO's
+## Screenshots
 
-- media queries
-- condense CSS
+![](./Screenshot-1.png)
+
+![](./Screenshot-2.png)
+
+![](./Screenshot-mobile.png)
+
+## TODO's if I had more time
+
+- media queries to adjust screen sizes
+- condense CSS, use variables for colors and change sizing from px to rem
+- add a save property button if userID === true, and store in state
+- write more testing for the components
 
 ## Languages and Frameworks
 
@@ -17,7 +27,7 @@ Jest, React testing library
 
 ## Packages Used
 
-Axios, PropTypes, qs, 
+Axios, PropTypes, qs, FontAwesome Icons and facebook-login
 
 ## Available Scripts
 
